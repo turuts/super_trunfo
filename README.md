@@ -13,11 +13,11 @@ Este é um programa em C que simula um jogo de cartas estilo **Super Trunfo** on
 
 ### 🎯 Cadastro de Cartas
 - **Estado** (sigla)
-- **Código** da carta  
-- **Nome** da cidade
-- **População** total
-- **Área** territorial
-- **PIB** municipal
+- **Código da carta**  
+- **Nome da cidade**
+- **População total**
+- **Área territorial**
+- **PIB municipal**
 - **Pontos turísticos**
 
 ### 📊 Cálculos Automáticos
@@ -118,7 +118,73 @@ Este é um programa em C que simula um jogo de cartas estilo **Super Trunfo** on
 ```bash
 ./super_trunfo
 gcc -o super_trunfo super_trunfo.c
+```
 
+# 🎴 Super Trunfo - Lógica de Comparação de Cidades
 
+## 📋 Descrição do Projeto
+Este é um programa feito em C e tem como objetivo estabelecer uma lógica ao jogo de cartas criado acima
 
+## 🚀 Funcionalidades principais:
 
+### 🎯 Cadastro de Cartas
+- **Estado**(sigla)
+- **Código da carta**  
+- **Nome da cidade**
+- **População total**
+- **Área territorial**
+- **PIB municipal**
+- **Pontos turísticos**
+
+## 🔨 Exemplo de Uso
+
+### Entrada de Dados
+--- PRIMEIRA CARTA ---
+- **Letra do Estado**: A
+- **Código da Carta (ex: A01)**: A01
+- **Nome da cidade**: São Paulo
+- **População**: 12300000
+- **Área (km²)**: 1521
+- **PIB (bilhões de reais)**: 699.5
+- **Pontos Turísticos**: 50
+
+--- SEGUNDA CARTA ---
+- **Letra do Estado**: B
+- **Código da Carta (ex: B02)**: B02
+- **Nome da cidade**: Rio de Janeiro
+- **População**: 6748000
+- **Área (km²)**: 1200
+- **PIB (bilhões de reais)**: 344.5
+- **Pontos Turísticos**: 40
+
+=== CARTAS CADASTRADAS! ===
+
+### Saída de Dados
+ === MENU DE COMPARAÇÃO - PRIMEIRO ATRIBUTO ===
+- 1- População
+- 2- Área
+- 3- PIB
+- 4- Pontos Turísticos
+- 5- Densidade Populacional
+- **Digite sua opção (1-5)**: 3
+
+=== MENU DE COMPARAÇÃO - SEGUNDO ATRIBUTO ===
+- 1- População
+- 2- Área
+- 4- Pontos Turísticos
+- 5- Densidade Populacional
+- **Digite sua opção**: 4
+
+--- RESULTADO FINAL ---
+### Soma dos atributos normalizados:
+- **São Paulo**: 743.00 pontos
+- **Rio de Janeiro**: 384.00 pontos
+
+🎉 **RESULTADO: São Paulo (A) VENCEU!** 🎉
+### Motivo: Maior soma de atributos (743.00 vs 384.00)
+
+## 🔧🎮 Como Executar e Compilar
+```bash
+./super_trunfo
+gcc -o super_trunfo_logica super_trunfo_logica.c
+```
